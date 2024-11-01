@@ -1,0 +1,170 @@
+.vp-shipping-rate-settings {
+	&-pricing {
+		border-radius: 4px;
+		border: 1px solid #8c8f94;
+		background: #fff;
+		margin: 0 0 10px 0;
+		max-width: 750px;
+
+		&-add {
+			padding: 0 0 5px 0;
+
+			a.button {
+				display: flex;
+				align-items: center;
+				text-decoration: none;
+				outline: none;
+				padding: 0 10px 0 6px;
+				margin: 0 0 10px 0;
+				float: left;
+
+				&:focus {
+					outline: none;
+					box-shadow: none;
+				}
+
+				span:first-child {
+					margin-right: 6px;
+				}
+			}
+
+			p.description {
+				max-width: 750px;
+				clear: both;
+			}
+		
+		}
+
+		&-title {
+			display: flex;
+			align-items: center;
+			padding: 20px 20px;
+			border-bottom: 1px solid #CCD0D4;
+
+			.cost-field {
+				display: flex;
+				margin-right: auto;
+
+				small {
+					background: rgba(0,0,0,0.1);
+					padding: 8px 12px;
+					border-radius: 0 5px 5px 0;
+					font-size: 14px;
+					border: 1px solid #8c8f94;
+					margin-left: -1px;
+				}
+
+				input {
+					width: auto !important;
+					border-radius: 5px 0 0 5px;
+				}
+			}
+
+			span.text {
+				margin: 0 10px;
+			}
+
+			a.delete-pricing {
+				color: #a00;
+			}
+
+		}
+
+		&-if {
+			padding: 20px 20px 12px 20px;
+
+			&-header {
+				display: flex;
+				align-items: center;
+				color: #666666;
+				padding-bottom: 8px;
+
+				select {
+					margin: 0 10px !important;
+					width: auto !important;
+					line-height: 24px !important;
+					min-height: 0px !important;
+				}
+			}
+
+			&-options {
+				margin: 0;
+				padding: 0 0 0 0;
+				list-style-type: none;
+
+				select, input {
+					width: auto !important;
+					line-height: 24px !important;
+					min-height: 0px !important;
+				}
+
+				li {
+					display: flex;
+					align-items: center;
+					margin: 0 0 8px 0;
+
+					select, input[type="text"] {
+						margin-right: 8px !important;
+
+						&.value {
+							display: none;
+
+							&.selected {
+								display: block;
+							}
+						}
+					}
+
+					a {
+						width: 27px;
+						height: 27px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						text-align: center;
+						line-height: 27px;
+						text-decoration: none;
+						color: #CCCCCC;
+					}
+
+					&:first-child a.delete-row {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&-option {
+			margin-right: 20px;
+			margin-bottom: 20px;
+			position: relative;
+
+			small {
+				position: absolute;
+				line-height: 34px;
+				bottom: 0;
+				padding-right: 10px;
+				right: 0;
+			}
+
+			input[type=text], select {
+				width: 100% !important;
+			}
+
+			input[type=text] {
+				padding: 2px 8px !important;
+			}
+
+			input[type="checkbox"] {
+				margin-top: 9px;
+			}
+
+			label {
+				margin: 0 0 5px 0;
+				display: block;
+			}
+
+		}
+	}
+
+}
